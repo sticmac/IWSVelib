@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IWSVelib", "IWSVelib\IWSVelib.csproj", "{7EAB369D-CFCB-4062-A4D2-31A03951AB70}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibClient", "VelibClient\VelibClient.csproj", "{3CF17ABC-85E4-4986-B284-1D3B6CD0D53A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7EAB369D-CFCB-4062-A4D2-31A03951AB70} = {7EAB369D-CFCB-4062-A4D2-31A03951AB70}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
