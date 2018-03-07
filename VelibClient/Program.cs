@@ -13,13 +13,19 @@ namespace VelibClient
         {
             VelibServiceClient velibService = new VelibServiceClient();
 
-            Station[] stations = velibService.GetStations("Toulouse");
+            Console.WriteLine("Quelle ville ?");
+            string city = Console.ReadLine();
+            Console.WriteLine();
 
-            foreach(Station station in stations)
-            {
-                Console.WriteLine(station.Name);
-            }
-            Console.ReadLine();
+            Console.WriteLine("Quelle station ?");
+            string stationName = Console.ReadLine();
+            Console.WriteLine();
+
+            Station station = velibService.GetStation(city, stationName);
+
+            Console.WriteLine(station.Name + " – " + station.Address);
+            Console.WriteLine();
+            Console.WriteLine("Vélos disponibles : " + station.Available_bikes + "/" + station.Bike_stands);
         }
     }
 }
