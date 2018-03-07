@@ -11,8 +11,8 @@ namespace IWSVelib
     [ServiceContract]
     public interface IVelibService
     {
-        int GetFreeByciclesAt(string city, string stationName);
-        int GetPlacesAt(string city, string stationName);
+        Station[] GetStations(string city);
+        Station GetStation(string city, string stationName);
     }
 
 }
