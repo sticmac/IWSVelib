@@ -11,7 +11,9 @@ namespace IWSVelib
     [ServiceContract]
     public interface IVelibService
     {
+        [OperationContract]
         Station[] GetStations(string city);
+        [OperationContract]
         Station GetStation(string city, string stationName);
     }
 
