@@ -7,9 +7,9 @@ using System.Text;
 
 namespace IWSVelib
 {
-    // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom d'interface "IService1" à la fois dans le code et le fichier de configuration.
+    // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom d'interface "IVelibService" à la fois dans le code et le fichier de configuration.
     [ServiceContract]
-    public interface IService1
+    public interface IVelibService
     {
         int GetFreeByciclesAt(string city, string stationName);
         int GetPlacesAt(string city, string stationName);
