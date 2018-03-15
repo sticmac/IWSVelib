@@ -44,6 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cli\Shell.cs" />
+    <Compile Include="Cli\CommandLauncher.cs" />
+    <Compile Include="Cli\Commands\Command.cs" />
+    <Compile Include="Cli\Commands\Help.cs" />
+    <Compile Include="Cli\Commands\ListStations.cs" />
+    <Compile Include="Cli\Commands\Quit.cs" />
+    <Compile Include="Cli\Commands\StationBikes.cs" />
     <Compile Include="Connected Services\VelibService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -86,5 +93,6 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
