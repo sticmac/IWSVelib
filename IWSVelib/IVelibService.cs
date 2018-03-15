@@ -15,6 +15,8 @@ namespace IWSVelib
         Station[] GetStations(string city);
         [OperationContract]
         Station GetStation(string city, string stationName);
+        [OperationContract]
+        Contract[] GetContracts();
     }
 
 }

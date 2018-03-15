@@ -14,7 +14,6 @@ namespace IWSVelib
     // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom de classe "VelibService" à la fois dans le code et le fichier de configuration.
     public class VelibService : IVelibService
     {
-
         private static string APIKEY = "b2fbf7cacc5a085a33c450fc1537a14b17961c6b";
 
         public VelibService()
@@ -48,7 +47,21 @@ namespace IWSVelib
 
         public Station[] GetStations(string city)
         {
-            WebRequest request = WebRequest.Create("https://api.jcdecaux.com/vls/v1/stations?contract=" + city + "&apiKey=" + APIKEY);
+            string response = Request("https://api.jcdecaux.com/vls/v1/stations?contract=" + city + "&apiKey=" + APIKEY);
+           
+            return response == null ? null : JsonConvert.DeserializeObject<Station[]>(response);
+        }
+
+        public Contract[] GetContracts()
+        {
+            string response = Request("https://api.jcdecaux.com/vls/v1/contracts?apiKey=" + APIKEY);
+
+            return JsonConvert.DeserializeObject<Contract[]>(response);
+        }
+
+        private string Request(string URL)
+        {
+            WebRequest request = WebRequest.Create(URL);
             WebResponse response;
             try
             {
@@ -67,7 +80,7 @@ namespace IWSVelib
             reader.Close();
             response.Close();
 
-            return JsonConvert.DeserializeObject<Station[]>(responseFromServer);
+            return responseFromServer;
         }
     }
 }
