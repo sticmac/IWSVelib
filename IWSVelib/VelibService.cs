@@ -4,6 +4,7 @@ using System.Linq;
 using System.IO;
 using System.Net;
 using System.Runtime.Serialization;
+using System.Web;
 using System.ServiceModel;
 using System.Text;
 using Newtonsoft.Json;
@@ -23,7 +24,16 @@ namespace IWSVelib
 
         public Station GetStation(string city, string stationName)
         {
-            Station[] stations = GetStations(city);
+            Station[] stations;
+            try
+            {
+                stations = GetStations(city);
+                if (stations == null) return null;
+            }
+            catch (WebException e)
+            {
+                return null;
+            }
 
             foreach(Station station in stations)
             {
@@ -33,7 +43,7 @@ namespace IWSVelib
                 }
             }
 
-            throw new ArgumentException("Unknown station");
+            return null;
         }
 
         public Station[] GetStations(string city)
@@ -46,7 +56,7 @@ namespace IWSVelib
             }
             catch (WebException e)
             {
-                throw new ArgumentException("Unknown city");
+                return null;
             }
 
             Stream dataStream = response.GetResponseStream();

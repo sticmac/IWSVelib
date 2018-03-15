@@ -21,11 +21,20 @@ namespace VelibClient.Cli
             commands.Add(command.Name, command);
         }
 
-        public void Execute(string commandName)
+        public void Execute(params string[] input)
         {
+            //separation of command name and command arguments
+            string commandName = input[0];
+            string[] args = new string[input.Length - 1];
+            if (args.Length > 0)
+            {
+                Array.Copy(input, 1, args, 0, input.Length - 1);
+            }
+
+            //executing the command if it exists…
             if (commands.ContainsKey(commandName))
             {
-                commands[commandName].Execute();
+                commands[commandName].Execute(args);
             }
             else
             {

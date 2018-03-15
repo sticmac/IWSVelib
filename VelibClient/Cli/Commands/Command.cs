@@ -11,7 +11,7 @@ namespace VelibClient.Cli.Commands
     {
         public string Name { get; set; }
 
-        private VelibServiceClient velibService;
+        protected VelibServiceClient velibService;
         
         public Command(string name)
         {

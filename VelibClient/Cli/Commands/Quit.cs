@@ -12,7 +12,7 @@ namespace VelibClient.Cli.Commands
 
         public override void Execute(params String[] args)
         {
-            throw new NotImplementedException();
+            Environment.Exit(0);
         }
     }
 }

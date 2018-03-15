@@ -12,7 +12,13 @@ namespace VelibClient.Cli.Commands
 
         public override void Execute(params String[] args)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("JC Decaux Velib Client");
+            Console.WriteLine("par Julien Lemaire");
+            Console.WriteLine("");
+            Console.WriteLine("- help : affiche ce message");
+            Console.WriteLine("- list <city> : liste les stations disponibles dans la ville <city>");
+            Console.WriteLine("- station <city> <stationname> : affiche le nombre de velibs disponibles dans la station correspondant au nom <stationname> de la ville <city>");
+            Console.WriteLine("- quit : ferme ce programme");
         }
     }
 }
