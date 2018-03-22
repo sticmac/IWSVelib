@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibClientGUI", "VelibClie
 		{7EAB369D-CFCB-4062-A4D2-31A03951AB70} = {7EAB369D-CFCB-4062-A4D2-31A03951AB70}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IWSVelibCore", "IWSVelibCore\IWSVelibCore.csproj", "{DAC70585-466D-4B65-92BF-426B921DF018}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{603C7C16-8193-4664-884E-D88E4B1173F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{82263D17-E921-4A77-A39F-8B3F446B2BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82263D17-E921-4A77-A39F-8B3F446B2BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82263D17-E921-4A77-A39F-8B3F446B2BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAC70585-466D-4B65-92BF-426B921DF018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC70585-466D-4B65-92BF-426B921DF018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC70585-466D-4B65-92BF-426B921DF018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC70585-466D-4B65-92BF-426B921DF018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{603C7C16-8193-4664-884E-D88E4B1173F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{603C7C16-8193-4664-884E-D88E4B1173F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{603C7C16-8193-4664-884E-D88E4B1173F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{603C7C16-8193-4664-884E-D88E4B1173F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
