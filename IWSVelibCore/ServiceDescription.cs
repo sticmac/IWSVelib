@@ -28,5 +28,6 @@ namespace IWSVelibCore
             }
 
             Contracts = contracts;
+        }
     }
 }
