@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VelibClientDotNetCore.Cli.Commands
 {
-    /*
+    /**
      * Displays help for the user on the CLI.
      */
     public class Help : Command

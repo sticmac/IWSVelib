@@ -6,6 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Service\VelibService.svc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Service\VelibService.svc" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -22,16 +30,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IWSVelibApp\IWSVelibApp.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="System.ServiceModel">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.ServiceModel.dll</HintPath>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Service\VelibService.svc.cs">
+      <DependentUpon>VelibService.svc</DependentUpon>
+    </Compile>
     <Compile Update="VelibService.svc.cs">
       <DependentUpon>VelibService.svc</DependentUpon>
     </Compile>
