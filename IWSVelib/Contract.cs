@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IWSVelib
+namespace IWSVelibLib
 {
     public class Contract
     {

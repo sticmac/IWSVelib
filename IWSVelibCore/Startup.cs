@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.Threading.Tasks;
-using IWSVelibCore.Service;
-using IWSVelibCore.Test;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -12,6 +10,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using SoapCore;
+using IWSVelibApp;
 
 namespace IWSVelibCore
 {
@@ -27,7 +27,7 @@ namespace IWSVelibCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.TryAddSingleton<CalculatorService>();
+            services.TryAddSingleton<VelibService>();
             services.AddMvc();
         }
 
@@ -39,7 +39,7 @@ namespace IWSVelibCore
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMiddleware<SOAPEndpointMiddleware>(typeof(CalculatorService), "./Test/CalculatorService.cs", new BasicHttpBinding());
+            app.UseSoapEndpoint<VelibService>("/VelibService.svc", new BasicHttpBinding(), SoapSerializer.XmlSerializer);
 
             app.UseMvc();
         }

@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-namespace IWSVelib
+namespace IWSVelibLib
 {
     // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom d'interface "IVelibService" à la fois dans le code et le fichier de configuration.
     [ServiceContract]

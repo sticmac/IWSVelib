@@ -51,6 +51,11 @@
     <Compile Include="Cli\Commands\ListStations.cs" />
     <Compile Include="Cli\Commands\Quit.cs" />
     <Compile Include="Cli\Commands\StationBikes.cs" />
+    <Compile Include="Connected Services\VelibServiceDocker\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\VelibService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -61,6 +66,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Connected Services\VelibServiceDocker\VelibClient.VelibServiceDocker.Contract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VelibServiceDocker\VelibClient.VelibServiceDocker.GetContractsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VelibServiceDocker\VelibClient.VelibServiceDocker.GetStationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VelibServiceDocker\VelibClient.VelibServiceDocker.GetStationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VelibServiceDocker\VelibClient.VelibServiceDocker.Station.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VelibServiceDocker\VelibService.wsdl" />
     <None Include="Connected Services\VelibService\IWSVelib.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -79,6 +100,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\VelibServiceDocker\" />
     <WCFMetadataStorage Include="Connected Services\VelibService\" />
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +115,17 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Connected Services\VelibServiceDocker\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\VelibServiceDocker\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\VelibServiceDocker\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

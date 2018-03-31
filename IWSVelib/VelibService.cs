@@ -9,7 +9,7 @@ using System.ServiceModel;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace IWSVelib
+namespace IWSVelibLib
 {
     // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom de classe "VelibService" à la fois dans le code et le fichier de configuration.
     public class VelibService : IVelibService
