@@ -7,6 +7,9 @@ using VelibClientDotNetCore.Cli.Commands;
 
 namespace VelibClientDotNetCore.Cli
 {
+    /**
+     * Executes a command corresponding to user input.
+     */
     class CommandLauncher
     {
         private Dictionary<string, Command> commands;

@@ -39,6 +39,7 @@ namespace IWSVelibCore
                 app.UseDeveloperExceptionPage();
             }
 
+            //Launching VelibService as a SOAP endpoint
             app.UseSoapEndpoint<VelibService>("/VelibService.svc", new BasicHttpBinding(), SoapSerializer.XmlSerializer);
 
             app.UseMvc();

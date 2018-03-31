@@ -30,8 +30,7 @@ namespace VelibClientDotNetCore.Cli
                 string[] input = Console.ReadLine().Split(' ');
                 if (input.Length > 0)
                 {
-                    //the first element of input is the name of the command
-                    //the following ones are the command arguments
+                    //sends input information to the command launcher
                     launcher.Execute(input);
                 }
             }

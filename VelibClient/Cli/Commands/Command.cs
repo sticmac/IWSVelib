@@ -7,6 +7,10 @@ using VelibClient.VelibService;
 
 namespace VelibClient.Cli.Commands
 {
+    /**
+     * abstract Command class
+     * defines a CLI command interface, according to Gamma's Command pattern
+     */
     public abstract class Command
     {
         public string Name { get; set; }

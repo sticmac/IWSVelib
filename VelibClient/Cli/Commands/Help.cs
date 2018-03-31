@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace VelibClient.Cli.Commands
 {
+    /**
+     * Displays help for the user on the CLI.
+     */
     public class Help : Command
     {
         public Help() : base("help") { }

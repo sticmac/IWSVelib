@@ -7,6 +7,9 @@ using VelibClientDotNetCore.VelibServiceDotNetCore;
 
 namespace VelibClientDotNetCore.Cli.Commands
 {
+    /**
+     * List the stations for a given city.
+     */
     public class StationBikes : Command
     {
         public StationBikes() : base("station") { }

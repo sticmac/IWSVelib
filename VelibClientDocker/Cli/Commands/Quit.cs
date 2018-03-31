@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace VelibClientDotNetCore.Cli.Commands
 {
+    /**
+     * Quits client.
+     */
     public class Quit : Command
     {
         public Quit() : base("quit") { }

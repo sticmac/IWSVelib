@@ -7,6 +7,9 @@ using VelibClient.Cli.Commands;
 
 namespace VelibClient.Cli
 {
+    /**
+     * Executes a command corresponding to user input.
+     */
     class CommandLauncher
     {
         private Dictionary<string, Command> commands;

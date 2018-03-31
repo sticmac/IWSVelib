@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace VelibClient.Cli.Commands
 {
+    /**
+     * Quits client.
+     */
     public class Quit : Command
     {
         public Quit() : base("quit") { }
