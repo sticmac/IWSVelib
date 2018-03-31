@@ -78,7 +78,7 @@ namespace VelibClientGUI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(290, 93);
+            this.label3.Location = new System.Drawing.Point(365, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 17);
             this.label3.TabIndex = 3;
@@ -91,7 +91,7 @@ namespace VelibClientGUI
             this.StationsList.ItemHeight = 16;
             this.StationsList.Location = new System.Drawing.Point(250, 123);
             this.StationsList.Name = "StationsList";
-            this.StationsList.Size = new System.Drawing.Size(140, 228);
+            this.StationsList.Size = new System.Drawing.Size(290, 228);
             this.StationsList.Sorted = true;
             this.StationsList.TabIndex = 4;
             this.StationsList.SelectedIndexChanged += new System.EventHandler(this.StationsList_SelectedIndexChanged);
@@ -99,7 +99,7 @@ namespace VelibClientGUI
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
-            this.groupBox1.Location = new System.Drawing.Point(418, 172);
+            this.groupBox1.Location = new System.Drawing.Point(565, 174);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(261, 101);
             this.groupBox1.TabIndex = 5;
@@ -112,7 +112,7 @@ namespace VelibClientGUI
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.61111F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.38889F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
             this.tableLayoutPanel1.Controls.Add(this.AvailableBikesLabel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label5, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.TotalBikesLabel, 2, 0);
@@ -121,7 +121,7 @@ namespace VelibClientGUI
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(259, 73);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(260, 73);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // AvailableBikesLabel
@@ -162,13 +162,14 @@ namespace VelibClientGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 460);
+            this.ClientSize = new System.Drawing.Size(857, 460);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.StationsList);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.CitiesList);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "VelibGUI";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
