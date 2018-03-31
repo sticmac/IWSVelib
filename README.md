@@ -23,7 +23,8 @@ As a first step before running any of the programs available, please generate th
 
 1. You need to run the `docker-compose` build plan. Two ways to do it:
     1. You can run it through Visual Studio as you'd run any other project (with the Release option).
-    2. You can run it directly with powershell by going to the solution directory and run the `docker-compose up` command.
+    2. You can run it directly with powershell by going to the solution directory and run the `docker-compose up` command.      
+    
+    This runs the SOAP middleware into a ASP .Net core project (`IWSVelibCore` project) instead of a WCF one. The whole is run into a docker container, so it can be easily deployed.
   
-  This runs the SOAP middleware into a ASP .Net core project (`IWSVelibCore` project) instead of a WCF one. The whole is run into a docker container, so it can be easily deployed.
 2. Run the `VelibClientDotNetCore` project (`VelibClientDocker` subfolder). It runs a client very similar to the MVP one, but tries to connect to the docker container instead of the normal WCF service.
