@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace VelibClient.VelibServiceDocker {
+namespace VelibClientDotNetCore.VelibServiceDotNetCore {
     using System.Runtime.Serialization;
     using System;
     
@@ -166,29 +166,29 @@ namespace VelibClient.VelibServiceDocker {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="VelibServiceDocker.IVelibService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="VelibServiceDotNetCore.IVelibService")]
     public interface IVelibService {
         
         // CODEGEN : La génération du contrat de message depuis le nom d'élément city de l'espace de noms http://tempuri.org/ n'est pas marqué nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/GetStations", ReplyAction="*")]
-        VelibClient.VelibServiceDocker.GetStationsResponse GetStations(VelibClient.VelibServiceDocker.GetStationsRequest request);
+        VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsResponse GetStations(VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/GetStations", ReplyAction="*")]
-        System.Threading.Tasks.Task<VelibClient.VelibServiceDocker.GetStationsResponse> GetStationsAsync(VelibClient.VelibServiceDocker.GetStationsRequest request);
+        System.Threading.Tasks.Task<VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsResponse> GetStationsAsync(VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsRequest request);
         
         // CODEGEN : La génération du contrat de message depuis le nom d'élément city de l'espace de noms http://tempuri.org/ n'est pas marqué nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/GetStation", ReplyAction="*")]
-        VelibClient.VelibServiceDocker.GetStationResponse GetStation(VelibClient.VelibServiceDocker.GetStationRequest request);
+        VelibClientDotNetCore.VelibServiceDotNetCore.GetStationResponse GetStation(VelibClientDotNetCore.VelibServiceDotNetCore.GetStationRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/GetStation", ReplyAction="*")]
-        System.Threading.Tasks.Task<VelibClient.VelibServiceDocker.GetStationResponse> GetStationAsync(VelibClient.VelibServiceDocker.GetStationRequest request);
+        System.Threading.Tasks.Task<VelibClientDotNetCore.VelibServiceDotNetCore.GetStationResponse> GetStationAsync(VelibClientDotNetCore.VelibServiceDotNetCore.GetStationRequest request);
         
         // CODEGEN : La génération du contrat de message depuis le nom d'élément GetContractsResult de l'espace de noms http://tempuri.org/ n'est pas marqué nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/GetContracts", ReplyAction="*")]
-        VelibClient.VelibServiceDocker.GetContractsResponse GetContracts(VelibClient.VelibServiceDocker.GetContractsRequest request);
+        VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsResponse GetContracts(VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/GetContracts", ReplyAction="*")]
-        System.Threading.Tasks.Task<VelibClient.VelibServiceDocker.GetContractsResponse> GetContractsAsync(VelibClient.VelibServiceDocker.GetContractsRequest request);
+        System.Threading.Tasks.Task<VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsResponse> GetContractsAsync(VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -198,12 +198,12 @@ namespace VelibClient.VelibServiceDocker {
     public partial class GetStationsRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetStations", Namespace="http://tempuri.org/", Order=0)]
-        public VelibClient.VelibServiceDocker.GetStationsRequestBody Body;
+        public VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsRequestBody Body;
         
         public GetStationsRequest() {
         }
         
-        public GetStationsRequest(VelibClient.VelibServiceDocker.GetStationsRequestBody Body) {
+        public GetStationsRequest(VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -232,12 +232,12 @@ namespace VelibClient.VelibServiceDocker {
     public partial class GetStationsResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetStationsResponse", Namespace="http://tempuri.org/", Order=0)]
-        public VelibClient.VelibServiceDocker.GetStationsResponseBody Body;
+        public VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsResponseBody Body;
         
         public GetStationsResponse() {
         }
         
-        public GetStationsResponse(VelibClient.VelibServiceDocker.GetStationsResponseBody Body) {
+        public GetStationsResponse(VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -249,12 +249,12 @@ namespace VelibClient.VelibServiceDocker {
     public partial class GetStationsResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public VelibClient.VelibServiceDocker.Station[] GetStationsResult;
+        public VelibClientDotNetCore.VelibServiceDotNetCore.Station[] GetStationsResult;
         
         public GetStationsResponseBody() {
         }
         
-        public GetStationsResponseBody(VelibClient.VelibServiceDocker.Station[] GetStationsResult) {
+        public GetStationsResponseBody(VelibClientDotNetCore.VelibServiceDotNetCore.Station[] GetStationsResult) {
             this.GetStationsResult = GetStationsResult;
         }
     }
@@ -266,12 +266,12 @@ namespace VelibClient.VelibServiceDocker {
     public partial class GetStationRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetStation", Namespace="http://tempuri.org/", Order=0)]
-        public VelibClient.VelibServiceDocker.GetStationRequestBody Body;
+        public VelibClientDotNetCore.VelibServiceDotNetCore.GetStationRequestBody Body;
         
         public GetStationRequest() {
         }
         
-        public GetStationRequest(VelibClient.VelibServiceDocker.GetStationRequestBody Body) {
+        public GetStationRequest(VelibClientDotNetCore.VelibServiceDotNetCore.GetStationRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -304,12 +304,12 @@ namespace VelibClient.VelibServiceDocker {
     public partial class GetStationResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetStationResponse", Namespace="http://tempuri.org/", Order=0)]
-        public VelibClient.VelibServiceDocker.GetStationResponseBody Body;
+        public VelibClientDotNetCore.VelibServiceDotNetCore.GetStationResponseBody Body;
         
         public GetStationResponse() {
         }
         
-        public GetStationResponse(VelibClient.VelibServiceDocker.GetStationResponseBody Body) {
+        public GetStationResponse(VelibClientDotNetCore.VelibServiceDotNetCore.GetStationResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -321,12 +321,12 @@ namespace VelibClient.VelibServiceDocker {
     public partial class GetStationResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public VelibClient.VelibServiceDocker.Station GetStationResult;
+        public VelibClientDotNetCore.VelibServiceDotNetCore.Station GetStationResult;
         
         public GetStationResponseBody() {
         }
         
-        public GetStationResponseBody(VelibClient.VelibServiceDocker.Station GetStationResult) {
+        public GetStationResponseBody(VelibClientDotNetCore.VelibServiceDotNetCore.Station GetStationResult) {
             this.GetStationResult = GetStationResult;
         }
     }
@@ -338,12 +338,12 @@ namespace VelibClient.VelibServiceDocker {
     public partial class GetContractsRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetContracts", Namespace="http://tempuri.org/", Order=0)]
-        public VelibClient.VelibServiceDocker.GetContractsRequestBody Body;
+        public VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsRequestBody Body;
         
         public GetContractsRequest() {
         }
         
-        public GetContractsRequest(VelibClient.VelibServiceDocker.GetContractsRequestBody Body) {
+        public GetContractsRequest(VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -365,12 +365,12 @@ namespace VelibClient.VelibServiceDocker {
     public partial class GetContractsResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetContractsResponse", Namespace="http://tempuri.org/", Order=0)]
-        public VelibClient.VelibServiceDocker.GetContractsResponseBody Body;
+        public VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsResponseBody Body;
         
         public GetContractsResponse() {
         }
         
-        public GetContractsResponse(VelibClient.VelibServiceDocker.GetContractsResponseBody Body) {
+        public GetContractsResponse(VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -382,23 +382,23 @@ namespace VelibClient.VelibServiceDocker {
     public partial class GetContractsResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public VelibClient.VelibServiceDocker.Contract[] GetContractsResult;
+        public VelibClientDotNetCore.VelibServiceDotNetCore.Contract[] GetContractsResult;
         
         public GetContractsResponseBody() {
         }
         
-        public GetContractsResponseBody(VelibClient.VelibServiceDocker.Contract[] GetContractsResult) {
+        public GetContractsResponseBody(VelibClientDotNetCore.VelibServiceDotNetCore.Contract[] GetContractsResult) {
             this.GetContractsResult = GetContractsResult;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IVelibServiceChannel : VelibClient.VelibServiceDocker.IVelibService, System.ServiceModel.IClientChannel {
+    public interface IVelibServiceChannel : VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class VelibServiceClient : System.ServiceModel.ClientBase<VelibClient.VelibServiceDocker.IVelibService>, VelibClient.VelibServiceDocker.IVelibService {
+    public partial class VelibServiceClient : System.ServiceModel.ClientBase<VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService>, VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService {
         
         public VelibServiceClient() {
         }
@@ -420,78 +420,78 @@ namespace VelibClient.VelibServiceDocker {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        VelibClient.VelibServiceDocker.GetStationsResponse VelibClient.VelibServiceDocker.IVelibService.GetStations(VelibClient.VelibServiceDocker.GetStationsRequest request) {
+        VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsResponse VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService.GetStations(VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsRequest request) {
             return base.Channel.GetStations(request);
         }
         
-        public VelibClient.VelibServiceDocker.Station[] GetStations(string city) {
-            VelibClient.VelibServiceDocker.GetStationsRequest inValue = new VelibClient.VelibServiceDocker.GetStationsRequest();
-            inValue.Body = new VelibClient.VelibServiceDocker.GetStationsRequestBody();
+        public VelibClientDotNetCore.VelibServiceDotNetCore.Station[] GetStations(string city) {
+            VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsRequest inValue = new VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsRequest();
+            inValue.Body = new VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsRequestBody();
             inValue.Body.city = city;
-            VelibClient.VelibServiceDocker.GetStationsResponse retVal = ((VelibClient.VelibServiceDocker.IVelibService)(this)).GetStations(inValue);
+            VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsResponse retVal = ((VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService)(this)).GetStations(inValue);
             return retVal.Body.GetStationsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<VelibClient.VelibServiceDocker.GetStationsResponse> VelibClient.VelibServiceDocker.IVelibService.GetStationsAsync(VelibClient.VelibServiceDocker.GetStationsRequest request) {
+        System.Threading.Tasks.Task<VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsResponse> VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService.GetStationsAsync(VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsRequest request) {
             return base.Channel.GetStationsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<VelibClient.VelibServiceDocker.GetStationsResponse> GetStationsAsync(string city) {
-            VelibClient.VelibServiceDocker.GetStationsRequest inValue = new VelibClient.VelibServiceDocker.GetStationsRequest();
-            inValue.Body = new VelibClient.VelibServiceDocker.GetStationsRequestBody();
+        public System.Threading.Tasks.Task<VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsResponse> GetStationsAsync(string city) {
+            VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsRequest inValue = new VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsRequest();
+            inValue.Body = new VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsRequestBody();
             inValue.Body.city = city;
-            return ((VelibClient.VelibServiceDocker.IVelibService)(this)).GetStationsAsync(inValue);
+            return ((VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService)(this)).GetStationsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        VelibClient.VelibServiceDocker.GetStationResponse VelibClient.VelibServiceDocker.IVelibService.GetStation(VelibClient.VelibServiceDocker.GetStationRequest request) {
+        VelibClientDotNetCore.VelibServiceDotNetCore.GetStationResponse VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService.GetStation(VelibClientDotNetCore.VelibServiceDotNetCore.GetStationRequest request) {
             return base.Channel.GetStation(request);
         }
         
-        public VelibClient.VelibServiceDocker.Station GetStation(string city, string stationName) {
-            VelibClient.VelibServiceDocker.GetStationRequest inValue = new VelibClient.VelibServiceDocker.GetStationRequest();
-            inValue.Body = new VelibClient.VelibServiceDocker.GetStationRequestBody();
+        public VelibClientDotNetCore.VelibServiceDotNetCore.Station GetStation(string city, string stationName) {
+            VelibClientDotNetCore.VelibServiceDotNetCore.GetStationRequest inValue = new VelibClientDotNetCore.VelibServiceDotNetCore.GetStationRequest();
+            inValue.Body = new VelibClientDotNetCore.VelibServiceDotNetCore.GetStationRequestBody();
             inValue.Body.city = city;
             inValue.Body.stationName = stationName;
-            VelibClient.VelibServiceDocker.GetStationResponse retVal = ((VelibClient.VelibServiceDocker.IVelibService)(this)).GetStation(inValue);
+            VelibClientDotNetCore.VelibServiceDotNetCore.GetStationResponse retVal = ((VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService)(this)).GetStation(inValue);
             return retVal.Body.GetStationResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<VelibClient.VelibServiceDocker.GetStationResponse> VelibClient.VelibServiceDocker.IVelibService.GetStationAsync(VelibClient.VelibServiceDocker.GetStationRequest request) {
+        System.Threading.Tasks.Task<VelibClientDotNetCore.VelibServiceDotNetCore.GetStationResponse> VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService.GetStationAsync(VelibClientDotNetCore.VelibServiceDotNetCore.GetStationRequest request) {
             return base.Channel.GetStationAsync(request);
         }
         
-        public System.Threading.Tasks.Task<VelibClient.VelibServiceDocker.GetStationResponse> GetStationAsync(string city, string stationName) {
-            VelibClient.VelibServiceDocker.GetStationRequest inValue = new VelibClient.VelibServiceDocker.GetStationRequest();
-            inValue.Body = new VelibClient.VelibServiceDocker.GetStationRequestBody();
+        public System.Threading.Tasks.Task<VelibClientDotNetCore.VelibServiceDotNetCore.GetStationResponse> GetStationAsync(string city, string stationName) {
+            VelibClientDotNetCore.VelibServiceDotNetCore.GetStationRequest inValue = new VelibClientDotNetCore.VelibServiceDotNetCore.GetStationRequest();
+            inValue.Body = new VelibClientDotNetCore.VelibServiceDotNetCore.GetStationRequestBody();
             inValue.Body.city = city;
             inValue.Body.stationName = stationName;
-            return ((VelibClient.VelibServiceDocker.IVelibService)(this)).GetStationAsync(inValue);
+            return ((VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService)(this)).GetStationAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        VelibClient.VelibServiceDocker.GetContractsResponse VelibClient.VelibServiceDocker.IVelibService.GetContracts(VelibClient.VelibServiceDocker.GetContractsRequest request) {
+        VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsResponse VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService.GetContracts(VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsRequest request) {
             return base.Channel.GetContracts(request);
         }
         
-        public VelibClient.VelibServiceDocker.Contract[] GetContracts() {
-            VelibClient.VelibServiceDocker.GetContractsRequest inValue = new VelibClient.VelibServiceDocker.GetContractsRequest();
-            inValue.Body = new VelibClient.VelibServiceDocker.GetContractsRequestBody();
-            VelibClient.VelibServiceDocker.GetContractsResponse retVal = ((VelibClient.VelibServiceDocker.IVelibService)(this)).GetContracts(inValue);
+        public VelibClientDotNetCore.VelibServiceDotNetCore.Contract[] GetContracts() {
+            VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsRequest inValue = new VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsRequest();
+            inValue.Body = new VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsRequestBody();
+            VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsResponse retVal = ((VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService)(this)).GetContracts(inValue);
             return retVal.Body.GetContractsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<VelibClient.VelibServiceDocker.GetContractsResponse> VelibClient.VelibServiceDocker.IVelibService.GetContractsAsync(VelibClient.VelibServiceDocker.GetContractsRequest request) {
+        System.Threading.Tasks.Task<VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsResponse> VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService.GetContractsAsync(VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsRequest request) {
             return base.Channel.GetContractsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<VelibClient.VelibServiceDocker.GetContractsResponse> GetContractsAsync() {
-            VelibClient.VelibServiceDocker.GetContractsRequest inValue = new VelibClient.VelibServiceDocker.GetContractsRequest();
-            inValue.Body = new VelibClient.VelibServiceDocker.GetContractsRequestBody();
-            return ((VelibClient.VelibServiceDocker.IVelibService)(this)).GetContractsAsync(inValue);
+        public System.Threading.Tasks.Task<VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsResponse> GetContractsAsync() {
+            VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsRequest inValue = new VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsRequest();
+            inValue.Body = new VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsRequestBody();
+            return ((VelibClientDotNetCore.VelibServiceDotNetCore.IVelibService)(this)).GetContractsAsync(inValue);
         }
     }
 }

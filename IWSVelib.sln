@@ -21,6 +21,8 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IWSVelibApp", "IWSVelibApp\IWSVelibApp.csproj", "{560598E2-98DF-4CDF-A00D-0FB6968FF867}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibClientDotNetCore", "VelibClientDocker\VelibClientDotNetCore.csproj", "{23EE524E-135D-4254-8275-11D3B98FD1E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{560598E2-98DF-4CDF-A00D-0FB6968FF867}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{560598E2-98DF-4CDF-A00D-0FB6968FF867}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{560598E2-98DF-4CDF-A00D-0FB6968FF867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23EE524E-135D-4254-8275-11D3B98FD1E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23EE524E-135D-4254-8275-11D3B98FD1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23EE524E-135D-4254-8275-11D3B98FD1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23EE524E-135D-4254-8275-11D3B98FD1E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

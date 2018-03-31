@@ -15,7 +15,7 @@ namespace VelibClient.VelibService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Station", Namespace="http://schemas.datacontract.org/2004/07/IWSVelib")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Station", Namespace="http://schemas.datacontract.org/2004/07/IWSVelibLib")]
     [System.SerializableAttribute()]
     public partial class Station : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -106,6 +106,67 @@ namespace VelibClient.VelibService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Contract", Namespace="http://schemas.datacontract.org/2004/07/IWSVelibLib")]
+    [System.SerializableAttribute()]
+    public partial class Contract : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Country_codeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Country_code {
+            get {
+                return this.Country_codeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Country_codeField, value) != true)) {
+                    this.Country_codeField = value;
+                    this.RaisePropertyChanged("Country_code");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="VelibService.IVelibService")]
     public interface IVelibService {
@@ -121,6 +182,12 @@ namespace VelibClient.VelibService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/GetStation", ReplyAction="http://tempuri.org/IVelibService/GetStationResponse")]
         System.Threading.Tasks.Task<VelibClient.VelibService.Station> GetStationAsync(string city, string stationName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/GetContracts", ReplyAction="http://tempuri.org/IVelibService/GetContractsResponse")]
+        VelibClient.VelibService.Contract[] GetContracts();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/GetContracts", ReplyAction="http://tempuri.org/IVelibService/GetContractsResponse")]
+        System.Threading.Tasks.Task<VelibClient.VelibService.Contract[]> GetContractsAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -164,6 +231,14 @@ namespace VelibClient.VelibService {
         
         public System.Threading.Tasks.Task<VelibClient.VelibService.Station> GetStationAsync(string city, string stationName) {
             return base.Channel.GetStationAsync(city, stationName);
+        }
+        
+        public VelibClient.VelibService.Contract[] GetContracts() {
+            return base.Channel.GetContracts();
+        }
+        
+        public System.Threading.Tasks.Task<VelibClient.VelibService.Contract[]> GetContractsAsync() {
+            return base.Channel.GetContractsAsync();
         }
     }
 }

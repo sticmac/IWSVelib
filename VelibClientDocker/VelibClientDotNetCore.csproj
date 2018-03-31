@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3CF17ABC-85E4-4986-B284-1D3B6CD0D53A}</ProjectGuid>
+    <ProjectGuid>{23EE524E-135D-4254-8275-11D3B98FD1E6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>VelibClient</RootNamespace>
-    <AssemblyName>VelibClient</AssemblyName>
+    <RootNamespace>VelibClientDotNetCore</RootNamespace>
+    <AssemblyName>VelibClientDotNetCore</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,14 +44,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cli\Shell.cs" />
     <Compile Include="Cli\CommandLauncher.cs" />
     <Compile Include="Cli\Commands\Command.cs" />
     <Compile Include="Cli\Commands\Help.cs" />
     <Compile Include="Cli\Commands\ListStations.cs" />
     <Compile Include="Cli\Commands\Quit.cs" />
     <Compile Include="Cli\Commands\StationBikes.cs" />
-    <Compile Include="Connected Services\VelibService\Reference.cs">
+    <Compile Include="Cli\Shell.cs" />
+    <Compile Include="Connected Services\VelibServiceDotNetCore\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -61,37 +61,37 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\VelibService\IWSVelibLib.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\VelibService\service.wsdl" />
-    <None Include="Connected Services\VelibService\service.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\VelibService\service1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\VelibService\VelibClient.VelibService.Contract.datasource">
+    <None Include="Connected Services\VelibServiceDotNetCore\VelibClientDotNetCore.VelibServiceDotNetCore.Contract.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\VelibService\VelibClient.VelibService.Station.datasource">
+    <None Include="Connected Services\VelibServiceDotNetCore\VelibClientDotNetCore.VelibServiceDotNetCore.GetContractsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\VelibServiceDotNetCore\VelibClientDotNetCore.VelibServiceDotNetCore.GetStationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VelibServiceDotNetCore\VelibClientDotNetCore.VelibServiceDotNetCore.GetStationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VelibServiceDotNetCore\VelibClientDotNetCore.VelibServiceDotNetCore.Station.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VelibServiceDotNetCore\VelibService.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\VelibService\" />
+    <WCFMetadataStorage Include="Connected Services\VelibServiceDotNetCore\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\VelibService\configuration91.svcinfo" />
+    <None Include="Connected Services\VelibServiceDotNetCore\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\VelibService\configuration.svcinfo" />
+    <None Include="Connected Services\VelibServiceDotNetCore\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\VelibService\Reference.svcmap">
+    <None Include="Connected Services\VelibServiceDotNetCore\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

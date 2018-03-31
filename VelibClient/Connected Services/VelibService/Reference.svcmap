@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="62320dcf-444d-4a07-9461-ea4003607a8a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="edac8646-c036-4e03-a0fd-cb48499a1192" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/IWSVelib/Service1/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="d1477a2c-3d98-40c9-bf2d-207868ac11f4" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IWSVelib/Service1/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="e9d8a3cd-bc89-4ad1-8566-ec0f48687678" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IWSVelib/Service1/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="859bd022-7870-412a-a1c8-94f933bd8ad0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IWSVelib/Service1/mex" />
-    <MetadataFile FileName="IWSVelib.xsd" MetadataType="Schema" ID="38ba696b-46fd-4fd0-988c-70b3cb8df74e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IWSVelib/Service1/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="d38cf76d-c351-4648-bede-e873ed191218" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IWSVelib/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="c474df38-cc14-4254-baee-e5be0d533a8f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IWSVelib/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="94fc72c4-79d2-44d4-a677-b6b62e3182bd" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IWSVelib/Service1/mex" />
+    <MetadataFile FileName="IWSVelibLib.xsd" MetadataType="Schema" ID="3b17ccdb-22b1-4c9e-a980-915165a2edac" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IWSVelib/Service1/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

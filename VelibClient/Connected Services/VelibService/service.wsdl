@@ -4,7 +4,7 @@
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import namespace="http://tempuri.org/" />
       <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import namespace="http://schemas.datacontract.org/2004/07/IWSVelib" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/IWSVelibLib" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IVelibService_GetStations_InputMessage">
@@ -19,6 +19,12 @@
   <wsdl:message name="IVelibService_GetStation_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetStationResponse" />
   </wsdl:message>
+  <wsdl:message name="IVelibService_GetContracts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContracts" />
+  </wsdl:message>
+  <wsdl:message name="IVelibService_GetContracts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IVelibService">
     <wsdl:operation name="GetStations">
       <wsdl:input wsaw:Action="http://tempuri.org/IVelibService/GetStations" message="tns:IVelibService_GetStations_InputMessage" />
@@ -27,6 +33,10 @@
     <wsdl:operation name="GetStation">
       <wsdl:input wsaw:Action="http://tempuri.org/IVelibService/GetStation" message="tns:IVelibService_GetStation_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IVelibService/GetStationResponse" message="tns:IVelibService_GetStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContracts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVelibService/GetContracts" message="tns:IVelibService_GetContracts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVelibService/GetContractsResponse" message="tns:IVelibService_GetContracts_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IVelibService" type="tns:IVelibService">
@@ -42,6 +52,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetStation">
       <soap:operation soapAction="http://tempuri.org/IVelibService/GetStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContracts">
+      <soap:operation soapAction="http://tempuri.org/IVelibService/GetContracts" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

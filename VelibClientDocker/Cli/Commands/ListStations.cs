@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VelibClient.VelibService;
+using VelibClientDotNetCore.VelibServiceDotNetCore;
 
-namespace VelibClient.Cli.Commands
+namespace VelibClientDotNetCore.Cli.Commands
 {
     public class ListStations : Command
     {
