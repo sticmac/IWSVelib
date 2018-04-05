@@ -14,6 +14,6 @@ namespace IWSVelibEventsLib
         void GetStation(string cityname, string stationname);
 
         [OperationContract]
-        void SubscribeStationUpdated();
+        void SubscribeStationUpdated(string cityname, string stationname);
     }
 }

@@ -7,9 +7,9 @@ using VelibClientEvents.VelibServiceEvents;
 
 namespace VelibClientEvents
 {
-    class VelibServiceCallbackSink : VelibServiceEvents.IVelibServiceCallback
+    class VelibServiceCallbackSink : IVelibServiceCallback
     {
-        public void StationUpdated(string cityname, string stationname, int T, Station result)
+        public void StationUpdated(Station result)
         {
             Console.WriteLine(result.Name + " – " + result.Address);
             Console.WriteLine();

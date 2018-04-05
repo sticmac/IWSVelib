@@ -16,7 +16,7 @@ namespace VelibClientEvents
 
             VelibServiceEvents.VelibServiceClient objClient = new VelibServiceEvents.VelibServiceClient(iCntxt);
 
-            objClient.SubscribeStationUpdated();
+            objClient.SubscribeStationUpdated("toulouse", "metro");
 
             objClient.GetStation("toulouse", "metro");
             objClient.GetStation("lyon", "metro");

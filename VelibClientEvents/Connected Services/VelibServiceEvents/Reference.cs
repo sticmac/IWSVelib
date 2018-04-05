@@ -117,17 +117,17 @@ namespace VelibClientEvents.VelibServiceEvents {
         System.Threading.Tasks.Task GetStationAsync(string cityname, string stationname);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/SubscribeStationUpdated", ReplyAction="http://tempuri.org/IVelibService/SubscribeStationUpdatedResponse")]
-        void SubscribeStationUpdated();
+        void SubscribeStationUpdated(string cityname, string stationname);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/SubscribeStationUpdated", ReplyAction="http://tempuri.org/IVelibService/SubscribeStationUpdatedResponse")]
-        System.Threading.Tasks.Task SubscribeStationUpdatedAsync();
+        System.Threading.Tasks.Task SubscribeStationUpdatedAsync(string cityname, string stationname);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface IVelibServiceCallback {
         
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IVelibService/StationUpdated")]
-        void StationUpdated(string cityname, string stationname, int T, VelibClientEvents.VelibServiceEvents.Station result);
+        void StationUpdated(VelibClientEvents.VelibServiceEvents.Station result);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -166,12 +166,12 @@ namespace VelibClientEvents.VelibServiceEvents {
             return base.Channel.GetStationAsync(cityname, stationname);
         }
         
-        public void SubscribeStationUpdated() {
-            base.Channel.SubscribeStationUpdated();
+        public void SubscribeStationUpdated(string cityname, string stationname) {
+            base.Channel.SubscribeStationUpdated(cityname, stationname);
         }
         
-        public System.Threading.Tasks.Task SubscribeStationUpdatedAsync() {
-            return base.Channel.SubscribeStationUpdatedAsync();
+        public System.Threading.Tasks.Task SubscribeStationUpdatedAsync(string cityname, string stationname) {
+            return base.Channel.SubscribeStationUpdatedAsync(cityname, stationname);
         }
     }
 }

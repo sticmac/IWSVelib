@@ -16,7 +16,10 @@
   </xs:element>
   <xs:element name="SubscribeStationUpdated">
     <xs:complexType>
-      <xs:sequence />
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cityname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stationname" nillable="true" type="xs:string" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="SubscribeStationUpdatedResponse">
@@ -27,9 +30,6 @@
   <xs:element name="StationUpdated">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="cityname" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="stationname" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="T" type="xs:int" />
         <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/IWSVelibLib" minOccurs="0" name="result" nillable="true" type="q1:Station" />
       </xs:sequence>
     </xs:complexType>

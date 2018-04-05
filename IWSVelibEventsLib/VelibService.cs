@@ -10,19 +10,38 @@ namespace IWSVelibEventsLib
 {
     public class VelibService : IVelibService
     {
-        static Action<string, string, int, Station> event1 = delegate { };
+        static Dictionary<RequestInfo, Action<Station>> events = new Dictionary<RequestInfo, Action<Station>>();
 
         public void GetStation(string cityname, string stationname)
         {
+            RequestInfo ri = new RequestInfo(cityname, stationname);
             Station s = (new IWSVelibLib.VelibService()).GetStation(cityname, stationname);
-            event1(cityname, stationname, 0, s);
+            Action<Station> targets;
+            if (events.TryGetValue(ri, out targets))
+            {
+                targets(s);
+            }
         }
 
-        public void SubscribeStationUpdated()
+        public void SubscribeStationUpdated(string cityname, string stationname)
         {
             IVelibServiceEvents subscriber =
                 OperationContext.Current.GetCallbackChannel<IVelibServiceEvents>();
-            event1 += subscriber.StationUpdated;
+            RequestInfo ri = new RequestInfo(cityname, stationname);
+            Action<Station> targets;
+            if (events.TryGetValue(ri, out targets))
+            {
+                targets += subscriber.StationUpdated;
+                Console.WriteLine(events[ri]);
+            }
+            else
+            {
+                targets = delegate { };
+                targets += subscriber.StationUpdated;
+                events.Add(ri, targets);
+                Console.WriteLine(events.Keys);
+                Console.WriteLine(events[ri]);
+            }
         }
     }
 }

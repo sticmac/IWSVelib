@@ -11,6 +11,6 @@ namespace IWSVelibEventsLib
     public interface IVelibServiceEvents
     {
         [OperationContract(IsOneWay = true)]
-        void StationUpdated(string cityname, string stationname, int T, Station result);
+        void StationUpdated(Station result);
     }
 }
