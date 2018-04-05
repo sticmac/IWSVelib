@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/IWSVelibLib" />
+  <xs:element name="GetStation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cityname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stationname" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubscribeStationUpdated">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cityname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stationname" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubscribeStationUpdatedResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StationUpdated">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/IWSVelibLib" minOccurs="0" name="result" nillable="true" type="q1:Station" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

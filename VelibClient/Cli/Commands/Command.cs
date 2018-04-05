@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using VelibClient.VelibService;
@@ -16,11 +17,16 @@ namespace VelibClient.Cli.Commands
         public string Name { get; set; }
 
         protected VelibServiceClient velibService;
+        protected VelibServiceEvents.VelibServiceClient velibServiceEvents;
         
         public Command(string name)
         {
             this.Name = name;
             this.velibService = new VelibServiceClient();
+            VelibServiceCallbackSink sink = new VelibServiceCallbackSink();
+            InstanceContext iCntxt = new InstanceContext(sink);
+
+            velibServiceEvents = new VelibServiceEvents.VelibServiceClient(iCntxt);
         }
 
         /**

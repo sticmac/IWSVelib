@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IWSVelibLib", "IWSVelib\IWS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibClient", "VelibClient\VelibClient.csproj", "{3CF17ABC-85E4-4986-B284-1D3B6CD0D53A}"
 	ProjectSection(ProjectDependencies) = postProject
+		{DEEABF73-DECE-47BF-9827-E61E365A6D06} = {DEEABF73-DECE-47BF-9827-E61E365A6D06}
 		{7EAB369D-CFCB-4062-A4D2-31A03951AB70} = {7EAB369D-CFCB-4062-A4D2-31A03951AB70}
 	EndProjectSection
 EndProject
@@ -26,6 +27,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibClientEvents", "VelibClientEvents\VelibClientEvents.csproj", "{D6323ADF-4543-4895-95C6-3A2DD90D89F9}"
 	ProjectSection(ProjectDependencies) = postProject
 		{DEEABF73-DECE-47BF-9827-E61E365A6D06} = {DEEABF73-DECE-47BF-9827-E61E365A6D06}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{55F6A170-A3BF-4278-ACF0-EBAF2FA295DA}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global

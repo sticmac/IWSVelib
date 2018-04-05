@@ -20,6 +20,7 @@ namespace VelibClient.Cli
             launcher.AddCommand(new ListStations());
             launcher.AddCommand(new Quit());
             launcher.AddCommand(new StationBikes());
+            launcher.AddCommand(new Subscribe());
         }
 
         public void Execute()

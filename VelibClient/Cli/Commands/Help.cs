@@ -21,6 +21,7 @@ namespace VelibClient.Cli.Commands
             Console.WriteLine("- help : affiche ce message");
             Console.WriteLine("- list <city> : liste les stations disponibles dans la ville <city>");
             Console.WriteLine("- station <city> <stationname> : affiche le nombre de velibs disponibles dans la station correspondant au nom <stationname> de la ville <city>");
+            Console.WriteLine("- subscribe <city> <stationname> : s'abonne à une station. Le client recevera alors une notification chaque fois que le nombre de vélos est mis a jour pour cette station.");
             Console.WriteLine("- quit : ferme ce programme");
         }
     }
