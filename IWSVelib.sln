@@ -21,6 +21,13 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibClientDotNetCore", "VelibClientDocker\VelibClientDotNetCore.csproj", "{23EE524E-135D-4254-8275-11D3B98FD1E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IWSVelibEventsLib", "IWSVelibEventsLib\IWSVelibEventsLib.csproj", "{DEEABF73-DECE-47BF-9827-E61E365A6D06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibClientEvents", "VelibClientEvents\VelibClientEvents.csproj", "{D6323ADF-4543-4895-95C6-3A2DD90D89F9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DEEABF73-DECE-47BF-9827-E61E365A6D06} = {DEEABF73-DECE-47BF-9827-E61E365A6D06}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +58,14 @@ Global
 		{23EE524E-135D-4254-8275-11D3B98FD1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23EE524E-135D-4254-8275-11D3B98FD1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23EE524E-135D-4254-8275-11D3B98FD1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEEABF73-DECE-47BF-9827-E61E365A6D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEABF73-DECE-47BF-9827-E61E365A6D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEABF73-DECE-47BF-9827-E61E365A6D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEABF73-DECE-47BF-9827-E61E365A6D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6323ADF-4543-4895-95C6-3A2DD90D89F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6323ADF-4543-4895-95C6-3A2DD90D89F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6323ADF-4543-4895-95C6-3A2DD90D89F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6323ADF-4543-4895-95C6-3A2DD90D89F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

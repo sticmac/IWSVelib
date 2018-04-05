@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6bb65f02-a0e1-4480-808b-30d74830da76" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/IWSVelibEventsLib/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="e83727e7-63e9-4a42-afcb-659adbe94546" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IWSVelibEventsLib/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="1a5b174c-db50-43ab-bc88-60018a9930bc" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IWSVelibEventsLib/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="bc332ff2-2a81-48bf-a61f-730d418d22b6" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IWSVelibEventsLib/Service1/mex" />
+    <MetadataFile FileName="IWSVelibLib.xsd" MetadataType="Schema" ID="71bba522-490c-4ca3-a595-6287d01ae494" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IWSVelibEventsLib/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
