@@ -28,3 +28,10 @@ As a first step before running any of the programs available, please generate th
     This runs the SOAP middleware into a ASP .Net core project (`IWSVelibCore` project) instead of a WCF one. The whole is run into a docker container, so it can be easily deployed.
   
 2. Run the `VelibClientDotNetCore` project (`VelibClientDocker` subfolder). It runs a client very similar to the MVP one, but tries to connect to the docker container instead of the normal WCF service.
+
+## "Events" extension
+
+1. Run the `IWSVelibEventsLib` project.
+2. Run either the:
+	i. `VelibClientEvents` project, which is a simple demonstration of a subscription to a station.
+	ii. `VelibClient` project and subscribe to a station.

@@ -28,6 +28,8 @@ namespace VelibClient.Cli.Commands
                 return;
             }
 
+            velibServiceEvents.GetStation(args[0], args[1]);
+
             Console.WriteLine(station.Name + " – " + station.Address);
             Console.WriteLine();
             Console.WriteLine("Vélos disponibles : " + station.Available_bikes + "/" + station.Bike_stands);
